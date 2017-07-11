@@ -1,9 +1,41 @@
 <!DOCTYPE html>
-<html>
+
+<html lang='en'>
 <head>
-	<title></title>
+	<title>Hangman-Game</title>
+	<meta charset='uft=8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--link rel="stylesheet" type="text/css" href="assets/css/reset.css"-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="assets/javascript/game.js"></script>
 </head>
 <body>
-
+	<div class="titlecontent">
+    <div class="header">
+    		<h2>"Stars" and Movies Hangman Game</h2>
+    </div>
+    		<br>
+    			<p>Click on the alphabet below to guess the movie title.</p>
+    			<p>Press the hint button for a clue.</p>
+	</div>
+	<div class="maincontent">
+    	<div id="buttons">
+    	</div>  
+    		<br>
+    		<p id="categoryName"></p>
+    		<br>
+    	<div id="hold">
+    	</div>
+    	<!--<p id="mylives"></p>-->
+    	<p id="clue"> Clue </p> 
+      <p id="mylives"></p> 
+      <div class="stickfig">
+     	  <canvas id="stickman"></canvas>
+      </div>
+    	<div class="container">
+      		<button id="hint">Hint</button>
+      		<button id="reset">Play Again</button>
+   		</div>
+	</div>
 </body>
 </html>
